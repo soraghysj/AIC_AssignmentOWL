@@ -1,0 +1,288 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns="http://www.semanticweb.org/srghr/ontologies/2024/11/volumeOWL/"
+     xml:base="http://www.semanticweb.org/srghr/ontologies/2024/11/volumeOWL/"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     xmlns:volumeOWL="http://www.semanticweb.org/srghr/ontologies/2024/11/volumeOWL#">
+    <owl:Ontology rdf:about="http://www.semanticweb.org/srghr/ontologies/2024/11/volumeOWL">
+        <rdfs:comment>This Ontology will Calculate the Volume of Geometric Shapes</rdfs:comment>
+    </owl:Ontology>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Object Properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/srghr/ontologies/2024/11/volumeOWL#hasVolumeFormula -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/srghr/ontologies/2024/11/volumeOWL#hasVolumeFormula">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/srghr/ontologies/2024/11/volumeOWL#Geometric_Shape"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/srghr/ontologies/2024/11/volumeOWL#Cone"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/srghr/ontologies/2024/11/volumeOWL#Cube"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/srghr/ontologies/2024/11/volumeOWL#Cylinder"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/srghr/ontologies/2024/11/volumeOWL#RectangularPrism"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/srghr/ontologies/2024/11/volumeOWL#Sphere"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Data properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/srghr/ontologies/2024/11/volumeOWL#hasHeight -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/srghr/ontologies/2024/11/volumeOWL#hasHeight">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/srghr/ontologies/2024/11/volumeOWL#Geometric_Shape"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#double"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/srghr/ontologies/2024/11/volumeOWL#hasLength -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/srghr/ontologies/2024/11/volumeOWL#hasLength">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/srghr/ontologies/2024/11/volumeOWL#Geometric_Shape"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#double"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/srghr/ontologies/2024/11/volumeOWL#hasRadius -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/srghr/ontologies/2024/11/volumeOWL#hasRadius">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/srghr/ontologies/2024/11/volumeOWL#Geometric_Shape"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#double"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/srghr/ontologies/2024/11/volumeOWL#hasWidth -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/srghr/ontologies/2024/11/volumeOWL#hasWidth">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/srghr/ontologies/2024/11/volumeOWL#Geometric_Shape"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#double"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/srghr/ontologies/2024/11/volumeOWL#Cone -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/srghr/ontologies/2024/11/volumeOWL#Cone">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/srghr/ontologies/2024/11/volumeOWL#Geometric_Shape"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/srghr/ontologies/2024/11/volumeOWL#Cube -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/srghr/ontologies/2024/11/volumeOWL#Cube">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/srghr/ontologies/2024/11/volumeOWL#Geometric_Shape"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/srghr/ontologies/2024/11/volumeOWL#Cylinder -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/srghr/ontologies/2024/11/volumeOWL#Cylinder">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/srghr/ontologies/2024/11/volumeOWL#Geometric_Shape"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/srghr/ontologies/2024/11/volumeOWL#Geometric_Shape -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/srghr/ontologies/2024/11/volumeOWL#Geometric_Shape"/>
+    
+
+
+    <!-- http://www.semanticweb.org/srghr/ontologies/2024/11/volumeOWL#RectangularPrism -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/srghr/ontologies/2024/11/volumeOWL#RectangularPrism">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/srghr/ontologies/2024/11/volumeOWL#Geometric_Shape"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/srghr/ontologies/2024/11/volumeOWL#Sphere -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/srghr/ontologies/2024/11/volumeOWL#Sphere">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/srghr/ontologies/2024/11/volumeOWL#Geometric_Shape"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/srghr/ontologies/2024/11/volumeOWL:OWLClass_003f21ff_899a_4250_b153_04fc35ea45be -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/srghr/ontologies/2024/11/volumeOWL:OWLClass_003f21ff_899a_4250_b153_04fc35ea45be">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/srghr/ontologies/2024/11/volumeOWL#Cylinder"/>
+        <rdfs:label>radius</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/srghr/ontologies/2024/11/volumeOWL:OWLClass_107db680_1692_4b02_9512_786605bdae93 -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/srghr/ontologies/2024/11/volumeOWL:OWLClass_107db680_1692_4b02_9512_786605bdae93">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/srghr/ontologies/2024/11/volumeOWL#RectangularPrism"/>
+        <rdfs:label>width</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/srghr/ontologies/2024/11/volumeOWL:OWLClass_296cc8f9_8ff8_4526_b366_8e70cdab90e1 -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/srghr/ontologies/2024/11/volumeOWL:OWLClass_296cc8f9_8ff8_4526_b366_8e70cdab90e1">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/srghr/ontologies/2024/11/volumeOWL#Sphere"/>
+        <rdfs:label>radius</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/srghr/ontologies/2024/11/volumeOWL:OWLClass_3393507e_192d_40f7_9c46_e7a680be468c -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/srghr/ontologies/2024/11/volumeOWL:OWLClass_3393507e_192d_40f7_9c46_e7a680be468c">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/srghr/ontologies/2024/11/volumeOWL#Cube"/>
+        <rdfs:label>length</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/srghr/ontologies/2024/11/volumeOWL:OWLClass_90e184a6_da8c_4d7e_8024_9255a2677c2e -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/srghr/ontologies/2024/11/volumeOWL:OWLClass_90e184a6_da8c_4d7e_8024_9255a2677c2e">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/srghr/ontologies/2024/11/volumeOWL#RectangularPrism"/>
+        <rdfs:label>length</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/srghr/ontologies/2024/11/volumeOWL:OWLClass_9351c44e_b772_46ae_8c3c_ef1085b6b522 -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/srghr/ontologies/2024/11/volumeOWL:OWLClass_9351c44e_b772_46ae_8c3c_ef1085b6b522">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/srghr/ontologies/2024/11/volumeOWL#Cone"/>
+        <rdfs:label>radius</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/srghr/ontologies/2024/11/volumeOWL:OWLClass_a391df7b_7873_4ab4_9d2d_85f5b9f9c16a -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/srghr/ontologies/2024/11/volumeOWL:OWLClass_a391df7b_7873_4ab4_9d2d_85f5b9f9c16a">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/srghr/ontologies/2024/11/volumeOWL#RectangularPrism"/>
+        <rdfs:label>height</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/srghr/ontologies/2024/11/volumeOWL:OWLClass_fbdb6190_bb81_4a97_893f_f7a497951dc2 -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/srghr/ontologies/2024/11/volumeOWL:OWLClass_fbdb6190_bb81_4a97_893f_f7a497951dc2">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/srghr/ontologies/2024/11/volumeOWL#Cone"/>
+        <rdfs:label>height</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Individuals
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/srghr/ontologies/2024/11/volumeOWL#ConeFormula -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/srghr/ontologies/2024/11/volumeOWL#ConeFormula">
+        <rdf:type rdf:resource="http://www.semanticweb.org/srghr/ontologies/2024/11/volumeOWL#Cone"/>
+        <volumeOWL:hasVolumeFormula rdf:resource="http://www.semanticweb.org/srghr/ontologies/2024/11/volumeOWL#ConeFormula"/>
+        <volumeOWL:hasHeight rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">8</volumeOWL:hasHeight>
+        <volumeOWL:hasRadius rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">5</volumeOWL:hasRadius>
+        <rdfs:comment>(1/3) * pi * radius * radius * height</rdfs:comment>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/srghr/ontologies/2024/11/volumeOWL#CubeFormula -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/srghr/ontologies/2024/11/volumeOWL#CubeFormula">
+        <rdf:type rdf:resource="http://www.semanticweb.org/srghr/ontologies/2024/11/volumeOWL#Cube"/>
+        <volumeOWL:hasVolumeFormula rdf:resource="http://www.semanticweb.org/srghr/ontologies/2024/11/volumeOWL#CubeFormula"/>
+        <volumeOWL:hasLength rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">8</volumeOWL:hasLength>
+        <rdfs:comment>length * length * length</rdfs:comment>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/srghr/ontologies/2024/11/volumeOWL#CylinderFormula -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/srghr/ontologies/2024/11/volumeOWL#CylinderFormula">
+        <rdf:type rdf:resource="http://www.semanticweb.org/srghr/ontologies/2024/11/volumeOWL#Cylinder"/>
+        <volumeOWL:hasVolumeFormula rdf:resource="http://www.semanticweb.org/srghr/ontologies/2024/11/volumeOWL#CylinderFormula"/>
+        <volumeOWL:hasHeight rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">12</volumeOWL:hasHeight>
+        <volumeOWL:hasRadius rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">5</volumeOWL:hasRadius>
+        <rdfs:comment>pi * radius * radius * height</rdfs:comment>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/srghr/ontologies/2024/11/volumeOWL#RectangularPrismFormula -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/srghr/ontologies/2024/11/volumeOWL#RectangularPrismFormula">
+        <rdf:type rdf:resource="http://www.semanticweb.org/srghr/ontologies/2024/11/volumeOWL#RectangularPrism"/>
+        <volumeOWL:hasVolumeFormula rdf:resource="http://www.semanticweb.org/srghr/ontologies/2024/11/volumeOWL#RectangularPrismFormula"/>
+        <volumeOWL:hasHeight rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">5</volumeOWL:hasHeight>
+        <volumeOWL:hasLength rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">12</volumeOWL:hasLength>
+        <volumeOWL:hasWidth rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">15</volumeOWL:hasWidth>
+        <rdfs:comment>length * width * height</rdfs:comment>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/srghr/ontologies/2024/11/volumeOWL#SphereFormula -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/srghr/ontologies/2024/11/volumeOWL#SphereFormula">
+        <rdf:type rdf:resource="http://www.semanticweb.org/srghr/ontologies/2024/11/volumeOWL#Sphere"/>
+        <volumeOWL:hasVolumeFormula rdf:resource="http://www.semanticweb.org/srghr/ontologies/2024/11/volumeOWL#SphereFormula"/>
+        <volumeOWL:hasRadius rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">5</volumeOWL:hasRadius>
+        <rdfs:comment>(4/3) * pi * radius * radius * radius</rdfs:comment>
+    </owl:NamedIndividual>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 4.5.29.2024-05-13T12:11:03Z) https://github.com/owlcs/owlapi -->
+
